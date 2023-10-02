@@ -22,11 +22,11 @@ public class Esercizio1 {
         Scanner input = new Scanner(System.in);
 
 
-        esercizio1a(input);
-        System.out.println("-----------------------------------");
-
-        esercizio1b(input);
-        System.out.println("-----------------------------------");
+//        esercizio1a(input);
+//        System.out.println("-----------------------------------");
+//
+//        esercizio1b(input);
+//        System.out.println("-----------------------------------");
 
         esercizio1c(input);
 
@@ -54,10 +54,10 @@ public class Esercizio1 {
     public static void esercizio1c(Scanner input){
         System.out.println("esercizio 1c : inserisci cinque nomi");
         String[] array1Es1c = new String[6];
-        for (int i = 0; i < 6; i++) {
-            if (i != 2) {
+        for (int i = 0; i < 5; i++) {
+
                 array1Es1c[i] = input.nextLine();
-            }
+
         }
         System.out.println(Arrays.toString(array1Es1c));
         System.out.println("esercizio 1c : inserisci nome da aggiungere");
@@ -75,6 +75,9 @@ public class Esercizio1 {
     }
 
     public static String[] inserisciInArray(String[] a, String b) {
+        a[5] = a[4];
+        a[4] = a[3];
+        a[3] = a[2];
         a[2] = b;
         return a;
     }
