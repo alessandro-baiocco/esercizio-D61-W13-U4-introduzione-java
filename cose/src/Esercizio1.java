@@ -22,11 +22,11 @@ public class Esercizio1 {
         Scanner input = new Scanner(System.in);
 
 
-//        esercizio1a(input);
-//        System.out.println("-----------------------------------");
-//
-//        esercizio1b(input);
-//        System.out.println("-----------------------------------");
+        esercizio1a(input);
+        System.out.println("-----------------------------------");
+
+        esercizio1b(input);
+        System.out.println("-----------------------------------");
 
         esercizio1c(input);
 
