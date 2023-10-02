@@ -28,13 +28,26 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("esercizio 1a : inserisci 2 valori");
-        int val1Es1 = Integer.parseInt(input.nextLine());
-        int val2Es1 = Integer.parseInt(input.nextLine());
-        System.out.println("il risultato è : " + moltiplica(val1Es1, val2Es1));
+        int val1Es1a = Integer.parseInt(input.nextLine());
+        int val2Es1a = Integer.parseInt(input.nextLine());
+        System.out.println("il risultato è : " + moltiplica(val1Es1a, val2Es1a));
         System.out.println("-----------------------------------");
+        System.out.println("esercizio 1b : inserisci una stringa ed un valore");
+        String str1es1b = input.nextLine();
+        String str2es1b = input.nextLine();
+        System.out.println(concatena(str1es1b , str2es1b));
+        System.out.println("-----------------------------------");
+
+
+
     }
 
     public static int moltiplica(int a, int b) {
         return a * b;
     }
-}
+
+    public static String concatena(String a, String b) {
+        return a + b;
+    }
+};
+
