@@ -20,6 +20,7 @@ public class Esercizio3 {
         esercizio3b(input);
         System.out.println("---------------------------------------------------------------------------" );
         esercizio3c(input);
+        input.close();
 
     }
     public static void esercizio3a(Scanner input) {

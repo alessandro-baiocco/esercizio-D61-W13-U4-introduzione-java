@@ -30,7 +30,7 @@ public class Esercizio1 {
 
         esercizio1c(input);
 
-
+input.close();
     }
 
     public static void esercizio1a(Scanner input) {

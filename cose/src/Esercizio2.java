@@ -13,5 +13,7 @@ public class Esercizio2 {
         String str2Es2 = input.nextLine();
         String str3Es2 = input.nextLine();
         System.out.println("prima String : " + (str1Es2 + " " + str2Es2 + " " + str3Es2) +" "+  "| seconda String : " + (str3Es2 + " " + str2Es2 + " "  + str1Es2) );
+        input.close();
     }
+
 }
