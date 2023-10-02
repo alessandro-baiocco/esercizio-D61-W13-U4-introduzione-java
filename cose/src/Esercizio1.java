@@ -21,20 +21,41 @@ public class Esercizio1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+
+        esercizio1a(input);
+        System.out.println("-----------------------------------");
+
+        esercizio1b(input);
+        System.out.println("-----------------------------------");
+
+        esercizio1c(input);
+
+
+    }
+
+    public static void esercizio1a(Scanner input) {
         System.out.println("esercizio 1a : inserisci 2 valori");
         int val1Es1a = Integer.parseInt(input.nextLine());
         int val2Es1a = Integer.parseInt(input.nextLine());
         System.out.println("il risultato è : " + moltiplica(val1Es1a, val2Es1a));
-        System.out.println("-----------------------------------");
+    }
+
+//    -------------------------------------------------------------
+
+    public static void esercizio1b(Scanner input){
         System.out.println("esercizio 1b : inserisci una stringa ed un valore");
         String str1es1b = input.nextLine();
         String str2es1b = input.nextLine();
-        System.out.println(concatena(str1es1b , str2es1b));
-        System.out.println("-----------------------------------");
+        System.out.println(concatena(str1es1b, str2es1b));
+    }
+
+//    ---------------------------------------------------------------------------
+
+    public static void esercizio1c(Scanner input){
         System.out.println("esercizio 1c : inserisci cinque nomi");
         String[] array1Es1c = new String[6];
-        for (int i = 0 ; i < 6 ; i++){
-            if(i != 2 ){
+        for (int i = 0; i < 6; i++) {
+            if (i != 2) {
                 array1Es1c[i] = input.nextLine();
             }
         }
@@ -42,15 +63,8 @@ public class Esercizio1 {
         System.out.println("esercizio 1c : inserisci nome da aggiungere");
         String str1Es1c = input.nextLine();
         System.out.println(Arrays.toString(inserisciInArray(array1Es1c, str1Es1c)));
-
-
-
-
-
-
-
-
     }
+//-----------------------------------------------------
 
     public static int moltiplica(int a, int b) {
         return a * b;
@@ -59,16 +73,12 @@ public class Esercizio1 {
     public static String concatena(String a, String b) {
         return a + b;
     }
-    public static String[] inserisciInArray(String[] a , String b){
+
+    public static String[] inserisciInArray(String[] a, String b) {
         a[2] = b;
         return a;
     }
 
-
-
-
-
-
-
 }
+
 
