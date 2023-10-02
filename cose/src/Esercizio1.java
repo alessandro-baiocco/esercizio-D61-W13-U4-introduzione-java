@@ -12,11 +12,7 @@ import java.util.Scanner;
 //        inserisciInArray: accetta un array di stringhe di cinque elementi ed una stringa e restituisca un array di sei elementi in cui la stringa passata sia al terzo posto e le stringhe precedentemente in quarta e quinta posizione siano rispettivamente in quinta e sesta.
 //
 //        Scrivere una main che invochi in sequenza i tre metodi realizzati
-//---------------------------------------------------------------------------------------------------------------------------------------------
-//
-//
-//
-//
+
 public class Esercizio1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -53,7 +49,7 @@ input.close();
 
     public static void esercizio1c(Scanner input){
         System.out.println("esercizio 1c : inserisci cinque nomi");
-        String[] array1Es1c = new String[6];
+        String[] array1Es1c = new String[5];
         for (int i = 0; i < 5; i++) {
 
                 array1Es1c[i] = input.nextLine();
@@ -75,11 +71,20 @@ input.close();
     }
 
     public static String[] inserisciInArray(String[] a, String b) {
-        a[5] = a[4];
-        a[4] = a[3];
-        a[3] = a[2];
-        a[2] = b;
-        return a;
+        String[] newArr = new String[6];
+        for(int i = 0 ; i < 6 ; i++){
+            if(i < 2){
+                newArr[i] = a[i];
+            }else if( i == 2) {
+                newArr[i] = b;
+            }else{
+                newArr[i] = a[i - 1];
+            }
+        }
+
+
+
+        return newArr;
     }
 
 }
