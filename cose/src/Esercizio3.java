@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import static java.lang.Math.sqrt;
+
 //Esercizio #3 ... in corso
 //        Implementare i seguenti metodi
 //
@@ -17,6 +19,7 @@ public class Esercizio3 {
         System.out.println("---------------------------------------------------------------------------" );
         esercizio3b(input);
         System.out.println("---------------------------------------------------------------------------" );
+        esercizio3c(input);
 
     }
     public static void esercizio3a(Scanner input) {
@@ -33,11 +36,23 @@ public class Esercizio3 {
         System.out.println(pariODispari(val1Es3b));
     }
 
+    public static void esercizio3c(Scanner input){
+        System.out.println("esercizio 3c : inserisci 3 valori" );
+        float val1Es3c = input.nextFloat();
+        float val2Es3c = input.nextFloat();
+        float val3Es3c = input.nextFloat();
+        System.out.println(areaTriangolo(val1Es3c , val2Es3c , val3Es3c));
+    }
+
     public static double perimetroRettangolo(double a , double b){
         return a * b;
     }
     public static int pariODispari(int a){
         return a % 2;
+    }
+    public static double areaTriangolo(float val1 ,float val2 ,float val3){
+        float perimetro = val1 + val2 + val3;
+        return  sqrt(perimetro * (perimetro - val1) * (perimetro - val2) * (perimetro - val3));
     }
 
 }
