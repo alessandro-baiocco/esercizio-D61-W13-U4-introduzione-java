@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-//Esercizio #3
+//Esercizio #3 ... in corso
 //        Implementare i seguenti metodi
 //
 //
@@ -12,14 +12,32 @@ import java.util.Scanner;
 public class Esercizio3 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
+
+        esercizio3a(input);
+        System.out.println("---------------------------------------------------------------------------" );
+        esercizio3b(input);
+        System.out.println("---------------------------------------------------------------------------" );
+
+    }
+    public static void esercizio3a(Scanner input) {
         System.out.println("esercizio 3a : inserisci 2 valori" );
-        float val1Es3 = input.nextFloat();
-        float val2Es3 = input.nextFloat();
-        System.out.println(perimetroRettangolo(val1Es3 , val2Es3));
+        float val1Es3a = input.nextFloat();
+        float val2Es3a = input.nextFloat();
+        System.out.println(perimetroRettangolo(val1Es3a , val2Es3a));
+
+    }
+
+    public static void esercizio3b(Scanner input){
+        System.out.println("esercizio 3b : inserisci un valore intero" );
+        int val1Es3b = input.nextInt();
+        System.out.println(pariODispari(val1Es3b));
     }
 
     public static double perimetroRettangolo(double a , double b){
         return a * b;
+    }
+    public static int pariODispari(int a){
+        return a % 2;
     }
 
 }
