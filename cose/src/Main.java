@@ -14,7 +14,7 @@ import java.util.Scanner;
 //        Scrivere una main che invochi in sequenza i tre metodi realizzati
 //---------------------------------------------------------------------------------------------------------------------------------------------
 //
-//        Esercizio #2 ... in corso
+//        Esercizio #2 fatto
 //        Implementare un metodo main che chiede all'utente di inserire tre stringhe da tastiera e scrive in console la concatenazione delle stringhe in ordine di inserimento e in ordine di inserimento inverso.
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //
@@ -52,6 +52,15 @@ public class Main {
         System.out.println("esercizio 1c : inserisci nome da aggiungere");
         String str1Es1c = input.nextLine();
         System.out.println(Arrays.toString(inserisciInArray(array1Es1c, str1Es1c)));
+        System.out.println("-----------------------------------");
+        System.out.println("esercizio 2 : inserisci 3 String");
+        String str1Es2 = input.nextLine();
+        String str2Es2 = input.nextLine();
+        String str3Es2 = input.nextLine();
+        System.out.println("prima String : " + (str1Es2 + " " + str2Es2 + " " + str3Es2) +" "+  "| seconda String : " + (str3Es2 + " " + str2Es2 + " "  + str1Es2) );
+
+
+
 
 
 
@@ -68,6 +77,10 @@ public class Main {
         a[2] = b;
         return a;
     }
+
+
+
+
 
 
 
